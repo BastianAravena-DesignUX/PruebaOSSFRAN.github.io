@@ -1110,32 +1110,44 @@
                 }
             }
 
-        @media (max-width: 680px) {
+@media (max-width: 680px) {
 
-    .oss {
-        overflow-x: hidden;
+    * {
+        min-width: 0 !important;
+    }
+
+    .oss,
+    .oss-wrap,
+    .oss-hero,
+    .oss-hero-grid,
+    .oss-hero-copy,
+    .oss-actions {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     .oss-wrap {
-        width: calc(100% - 28px);
-        max-width: 100%;
+        width: calc(100% - 28px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
     .oss-hero h1 {
-        font-family: Arial, sans-serif !important;
-        font-size: 56px !important;
-        max-width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-wrap: break-word !important;
     }
 
     .oss-actions {
-        width: 100%;
-        max-width: 100%;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
     }
 
     .oss-btn {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
     }
 }
 
