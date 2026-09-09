@@ -977,21 +977,28 @@
             }
 
             @media(max-width: 680px) {
-                .oss-wrap {
-                    width:min(100% - 28px,1180px)
-                }
+    .oss-wrap {
+        width: min(100% - 28px,1180px);
+    }
 
-                .oss-top .oss-wrap {
-                    justify-content: center
-                }
+    .oss-top .oss-wrap {
+        justify-content: center;
+    }
 
-                .oss-top-links {
-                    display: none
-                }
+    .oss-top-links {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        font-size: .62rem;
+        letter-spacing: .04em;
+        white-space: nowrap;
+    }
 
-                .oss-nav {
-                    min-height: 72px
-                }
+    .oss-nav {
+        min-height: 72px;
+    }
 
                 .oss-brand img {
                     width: 184px
